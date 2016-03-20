@@ -5,10 +5,10 @@ class CreateEvents < ActiveRecord::Migration
 
   def change
     create_table :events do |t|
-      t.text      :title
-      t.timestamp :open_date_time
-      t.timestamp :close_date_time
-      t.integer   :score_type
+      t.text     :title
+      t.datetime :open_date_time
+      t.datetime :close_date_time
+      t.integer  :score_type
     end
   end
   
